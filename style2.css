@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #f0f0f0;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#resume {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #1c1c1c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 2.5em;
+    color: #f0a500;
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    color: #e5e5e5;
+    margin-bottom: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid #f0a500;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #f0a500;
+}
+
+/* Paragraph Styles */
+p {
+    margin: 10px 0;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-left: 4px solid #f0a500;
+    border-radius: 4px;
+}
+
+/* List Styles */
+ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+ul ul {
+    list-style: circle;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Contact Information */
+#resume p:first-of-type {
+    margin-top: 20px;
+}
+
+#resume p:first-of-type a {
+    font-weight: bold;
+    color: #f0a500;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 20px 0;
+}
+
+/* Highlight Icons */
+#resume a:hover {
+    color: #ffcb6b;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    margin-bottom: 20px;
+}
+
+.dropdown-button {
+    width: 100%;
+    background-color: #f0a500;
+    color: #121212;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-button:hover {
+    background-color: #ffa726;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #1e1e1e;
+    padding: 10px;
+    margin-top: 5px;
+    border-left: 4px solid #f0a500;
+    border-radius: 4px;
+}
+
+/* Show dropdown content when active */
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+/* Optional: Add animation */
+.dropdown-content {
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
