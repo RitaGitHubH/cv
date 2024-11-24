@@ -1,11 +1,11 @@
 /* General Styles */
 body {
     font-family: 'Inter', sans-serif;
-    color: #e0e0e0;
-    background-color: #642e2e;
+    color: #333333;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.75;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,34 +18,35 @@ body {
     max-width: 900px;
     margin: 20px;
     padding: 24px;
-    background: #1a1a1a;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
+    border: 1px solid #e5e5e5;
     overflow: hidden;
 }
 
 /* Header Styles */
 h1 {
     font-size: 2.5rem;
-    color: #f0a500;
+    color: #000000;
     margin-bottom: 16px;
     text-align: center;
 }
 
 h2, h3 {
-    color: #ffffff;
+    color: #222222;
     margin-bottom: 12px;
 }
 
 h2 {
     font-size: 1.8rem;
-    border-bottom: 2px solid #f0a500;
+    border-bottom: 2px solid #000000;
     padding-bottom: 8px;
 }
 
 h3 {
     font-size: 1.4rem;
-    color: #ffa726;
+    color: #444444;
     margin-top: 20px;
 }
 
@@ -53,28 +54,28 @@ h3 {
 p {
     margin: 8px 0;
     font-size: 1rem;
-    color: #cccccc;
+    color: #555555;
     line-height: 1.6;
 }
 
 /* Link Styles */
 a {
-    color: #1e90ff;
+    color: #000000;
     font-weight: 500;
+    text-decoration: underline;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #64b5f6;
-    text-decoration: underline;
+    color: #555555;
 }
 
 /* Section Styles */
 section {
     margin-bottom: 24px;
     padding: 20px;
-    background-color: #222;
-    border-left: 4px solid #f0a500;
+    background-color: #f5f5f5;
+    border-left: 4px solid #000000;
     border-radius: 8px;
 }
 
@@ -99,7 +100,7 @@ li::before {
     transform: translateY(-50%);
     width: 8px;
     height: 8px;
-    background: #ffa726;
+    background: #000000;
     border-radius: 50%;
 }
 
@@ -111,12 +112,12 @@ li::before {
 
 #resume p:first-of-type a {
     font-weight: bold;
-    color: #ffa726;
+    color: #000000;
 }
 
 hr {
     border: none;
-    border-top: 1px solid #444;
+    border-top: 1px solid #dddddd;
     margin: 20px 0;
 }
 
@@ -127,8 +128,8 @@ hr {
 
 .dropdown-button {
     width: 100%;
-    background-color: #f0a500;
-    color: #121212;
+    background-color: #000000;
+    color: #ffffff;
     border: none;
     padding: 12px 16px;
     font-size: 1rem;
@@ -136,20 +137,20 @@ hr {
     cursor: pointer;
     border-radius: 8px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-button:hover {
-    background-color: #ffa726;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    background-color: #333333;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-content {
     display: none;
-    background-color: #222;
+    background-color: #f5f5f5;
     padding: 16px;
     margin-top: 8px;
-    border-left: 4px solid #f0a500;
+    border-left: 4px solid #000000;
     border-radius: 8px;
     animation: fadeIn 0.3s ease-out;
 }
@@ -171,11 +172,11 @@ hr {
     }
 }
 
-/* Modern Buttons */
+/* Button Styles */
 button {
     padding: 10px 20px;
-    background-color: #ffa726;
-    color: #121212;
+    background-color: #000000;
+    color: #ffffff;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -184,6 +185,7 @@ button {
 }
 
 button:hover {
-    background-color: #ffc107;
+    background-color: #333333;
     transform: scale(1.05);
 }
+
