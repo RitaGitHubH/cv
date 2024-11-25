@@ -1,53 +1,74 @@
+/* Geral: reset e fontes */
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: inherit;
+}
+
 body {
+    font-size: 16px;
     font-family: sans-serif;
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #121212; /* Fundo preto */
+    color: #ffffff; /* Texto branco */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
     flex-direction: column;
     gap: 20px;
+    min-height: 100vh;
 }
 
+/* Container principal do currículo */
 #resume {
-    max-width: 1200px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #1c1c1c;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 1200px;
+    padding: 40px;
+    background-color: #1c1c1c; /* Fundo cinza escuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Títulos principais */
 h1 {
-    color: rgb(255, 255, 255);
     text-align: center;
+    color: #ffffff; /* Texto branco */
+    font-size: 28px;
 }
 
+/* Estilos para o conteúdo de texto */
 p {
-    color: rgb(219, 219, 219);
+    color: #d3d3d3; /* Cinza claro */
+    margin: 8px 0;
 }
 
+/* Links */
 a {
-    color: #FFD100;
+    color: #ffd100; /* Cor amarela para links */
     text-decoration: none;
 }
 
+/* Linha de separação */
 hr {
-    border-color: #444;
+    border: 1px solid #444444;
+    margin: 20px 0;
 }
 
+/* Seção de introdução */
 #intro {
     font-size: 16px;
-    color: rgb(181, 181, 181);
+    color: #d3d3d3; /* Cinza claro */
     line-height: 1.6;
 }
 
+/* Estilo do botão de CV */
 .cv-button {
-    background-color: #FFD100;
-    color: #121212;
+    background-color: #ffffff; /* Fundo branco */
+    color: #121212; /* Texto preto */
     font-size: 16px;
     padding: 15px 25px;
     border: none;
@@ -55,13 +76,21 @@ hr {
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: block;
-    margin: 20px auto;
+    margin: 0 auto;
+    width: fit-content;
 }
 
+/* Hover e estado ativo do botão */
 .cv-button:hover {
-    background-color: #b8a700;
+    background-color: #f0f0f0;
 }
 
 .cv-button:active {
-    background-color: #9c9400;
+    background-color: #e0e0e0;
+}
+
+/* Raiz para suavizar fontes */
+:root {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
