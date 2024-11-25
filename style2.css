@@ -1,191 +1,69 @@
-/* General Styles */
 body {
-    font-family: 'Inter', sans-serif;
-    color: #333333;
-    background-color: #ffffff;
+    font-family: sans-serif;
+    background-color: #121212;
+    color: #ffffff;
     margin: 0;
     padding: 0;
-    line-height: 1.75;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    align-items: flex-start;
+    height: 100vh;
+    flex-direction: column;
+    gap: 20px;
 }
 
-/* Container */
 #resume {
-    width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 20px;
-    padding: 24px;
-    background: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    border: 1px solid #e5e5e5;
-    overflow: hidden;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Header Styles */
 h1 {
-    font-size: 2.5rem;
-    color: #000000;
-    margin-bottom: 16px;
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
-h2, h3 {
-    color: #222222;
-    margin-bottom: 12px;
-}
-
-h2 {
-    font-size: 1.8rem;
-    border-bottom: 2px solid #000000;
-    padding-bottom: 8px;
-}
-
-h3 {
-    font-size: 1.4rem;
-    color: #444444;
-    margin-top: 20px;
-}
-
-/* Paragraph Styles */
 p {
-    margin: 8px 0;
-    font-size: 1rem;
-    color: #555555;
-    line-height: 1.6;
+    color: rgb(219, 219, 219);
 }
 
-/* Link Styles */
 a {
-    color: #000000;
-    font-weight: 500;
-    text-decoration: underline;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #555555;
-}
-
-/* Section Styles */
-section {
-    margin-bottom: 24px;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-left: 4px solid #000000;
-    border-radius: 8px;
-}
-
-/* List Styles */
-ul {
-    padding-left: 20px;
-    list-style: none;
-    margin: 0;
-}
-
-li {
-    margin-bottom: 12px;
-    padding-left: 20px;
-    position: relative;
-}
-
-li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 8px;
-    height: 8px;
-    background: #000000;
-    border-radius: 50%;
-}
-
-/* Contact Information */
-#resume p:first-of-type {
-    margin-top: 20px;
-    font-size: 1.1rem;
-}
-
-#resume p:first-of-type a {
-    font-weight: bold;
-    color: #000000;
+    color: #FFD100;
+    text-decoration: none;
 }
 
 hr {
-    border: none;
-    border-top: 1px solid #dddddd;
-    margin: 20px 0;
+    border-color: #444;
 }
 
-/* Interactive Dropdown Styles */
-.dropdown {
-    margin-bottom: 24px;
+#intro {
+    font-size: 16px;
+    color: rgb(181, 181, 181);
+    line-height: 1.6;
 }
 
-.dropdown-button {
-    width: 100%;
-    background-color: #000000;
-    color: #ffffff;
+.cv-button {
+    background-color: #FFD100;
+    color: #121212;
+    font-size: 16px;
+    padding: 15px 25px;
     border: none;
-    padding: 12px 16px;
-    font-size: 1rem;
-    text-align: left;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.dropdown-button:hover {
-    background-color: #333333;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown-content {
-    display: none;
-    background-color: #f5f5f5;
-    padding: 16px;
-    margin-top: 8px;
-    border-left: 4px solid #000000;
-    border-radius: 8px;
-    animation: fadeIn 0.3s ease-out;
-}
-
-/* Show dropdown content when active */
-.dropdown.active .dropdown-content {
+    transition: background-color 0.3s ease;
     display: block;
+    margin: 20px auto;
 }
 
-/* Keyframe Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.cv-button:hover {
+    background-color: #b8a700;
 }
 
-/* Button Styles */
-button {
-    padding: 10px 20px;
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+.cv-button:active {
+    background-color: #9c9400;
 }
 
-button:hover {
-    background-color: #333333;
-    transform: scale(1.05);
-}
 
