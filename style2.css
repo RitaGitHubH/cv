@@ -1,4 +1,4 @@
-/* Geral: reset e fontes */
+/* General: reset and fonts */
 * {
     box-sizing: border-box;
     -webkit-font-smoothing: inherit;
@@ -7,23 +7,23 @@
 body {
     font-size: 16px;
     font-family: sans-serif;
-    background-color: #121212; /* Fundo preto */
-    color: #ffffff; /* Texto branco */
+    background-color: #121212; /* Black background */
+    color: #ffffff; /* White text */
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
     flex-direction: column;
     gap: 20px;
-    min-height: 100vh;
+    min-height: 100vh; /* Makes sure the content takes full height of the screen */
 }
 
-/* Container principal do currículo */
+/* Container for the resume */
 #resume {
-    width: 1200px;
-    padding: 40px;
-    background-color: #1c1c1c; /* Fundo cinza escuro */
+    width: 1400px; /* Increase width for a larger box */
+    padding: 50px; /* Adjust padding for more spacing */
+    background-color: #1c1c1c; /* Dark gray background */
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -31,44 +31,45 @@ body {
     gap: 20px;
     position: relative;
     overflow: hidden;
+    text-align: left; /* Ensures text is aligned to the left */
 }
 
-/* Títulos principais */
+/* Main titles */
 h1 {
     text-align: center;
-    color: #ffffff; /* Texto branco */
-    font-size: 28px;
+    color: #ffffff; /* White text */
+    font-size: 32px; /* Increase title size */
 }
 
-/* Estilos para o conteúdo de texto */
+/* Text content styles */
 p {
-    color: #d3d3d3; /* Cinza claro */
+    color: #d3d3d3; /* Light gray text */
     margin: 8px 0;
 }
 
 /* Links */
 a {
-    color: #ffd100; /* Cor amarela para links */
+    color: #ffd100; /* Yellow links */
     text-decoration: none;
 }
 
-/* Linha de separação */
+/* Horizontal separator line */
 hr {
     border: 1px solid #444444;
     margin: 20px 0;
 }
 
-/* Seção de introdução */
+/* Introduction section */
 #intro {
-    font-size: 16px;
-    color: #d3d3d3; /* Cinza claro */
+    font-size: 18px; /* Slightly larger font size for readability */
+    color: #d3d3d3; /* Light gray text */
     line-height: 1.6;
 }
 
-/* Estilo do botão de CV */
+/* CV button style */
 .cv-button {
-    background-color: #ffffff; /* Fundo branco */
-    color: #121212; /* Texto preto */
+    background-color: #ffffff; /* White background */
+    color: #121212; /* Black text */
     font-size: 16px;
     padding: 15px 25px;
     border: none;
@@ -80,7 +81,7 @@ hr {
     width: fit-content;
 }
 
-/* Hover e estado ativo do botão */
+/* Hover and active states for the button */
 .cv-button:hover {
     background-color: #f0f0f0;
 }
@@ -89,7 +90,7 @@ hr {
     background-color: #e0e0e0;
 }
 
-/* Raiz para suavizar fontes */
+/* Root for font smoothing */
 :root {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
